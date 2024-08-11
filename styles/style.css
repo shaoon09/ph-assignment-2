@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/miama');
+
+/* shared style */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    background-color: black;
+}
+
+/* banner-section */
+/* nav-section */
+.header {
+    padding-top: 3.5rem;
+    background: linear-gradient(to bottom,
+            rgba(119, 119, 119, 0),
+            rgb(17, 17, 17) 25%,
+            rgb(17, 17, 17) 50%,
+            rgb(17, 17, 17) 75%,
+            rgba(119, 119, 119, 0));
+
+}
+
+nav {
+    width: 75%;
+    height: fit-content;
+    margin: 0 auto;
+    margin-bottom: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+
+.brand {
+    font-weight: 800;
+    color: rgb(230, 83, 60);
+    font-style: italic;
+    font-size: 2.25rem;
+    background-color: transparent;
+}
+
+.nav-links {
+    width: 45%;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 2.45rem;
+    padding: 0.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+
+.nav-links button {
+    font-size: 1.15rem;
+    color: rgb(255, 255, 255);
+    border: none;
+    font-weight: 400;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.nav-links .btn {
+    border-radius: 2.8rem;
+    background-color: rgb(230, 83, 60);
+    padding: 0.5rem 1.25rem 0.5rem 1.25rem;
+    font-weight: 600;
+}
+
+.nav-links .end {
+    margin-right: 0.6rem;
+
+}
+
+.hamburger {
+    display: none;
+}
+
+/* banner-section */
+.banner-container {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+    background-color: transparent;
+}
+
+.banner-text {
+    width: 50%;
+    height: fit-content;
+    background-color: transparent;
+}
+
+.banner-text h1 {
+    color: rgb(255, 255, 255);
+    font-size: 4.8rem;
+    font-weight: 900;
+    line-height: 120%;
+    background-color: transparent;
+}
+
+#fahad {
+    font-family: 'Miama', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    display: inline-block;
+    background-color: transparent;
+}
+
+.banner-text p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 1.75rem;
+    background-color: transparent;
+}
+
+.banner-buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: transparent;
+}
+
+.banner-buttons button {
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    border-radius: 2.6rem;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 1.15rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    margin-top: 1.75rem;
+    background-color: transparent;
+}
+
+#shaoon {
+    background: rgb(230, 83, 60);
+}
+
+.banner-buttons .btn {
+    background: rgb(230, 83, 60);
+    margin-right: 0.8rem;
+    border: none;
+}
+
+.banner-image {
+    background-color: transparent;
+    position: relative;
+}
+
+.banner-image img {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover .extra {
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+    backdrop-filter: blur(1rem);
+    background-color: rgba(48, 48, 48, 0.54);
+}
+
+.hover .vt3 {
+    position: absolute;
+    top: 30%;
+    right: 0%;
+    padding: 1rem;
+}
+
+.extra #vt1 {
+    color: rgb(250, 250, 249);
+    font-size: 1.5rem;
+    font-weight: 900;
+    background: transparent;
+}
+
+.extra #vt2 {
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    font-weight: 900;
+    background: transparent;
+}
+
+.extra .vt2 {
+    color: rgba(239, 237, 232, 0.65);
+    font-size: 1rem;
+    font-weight: 400;
+    background: transparent;
+}
+
+.vt1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    bottom: 10%;
+    left: -20%;
+    padding: 1rem;
+}
+
+.circle {
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(230, 83, 60);
+    border-radius: 50%;
+    border: none;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle i {
+    display: none;
+    background: transparent;
+}
+
+.first {
+    background: transparent;
+}
+@media screen and (max-width:576px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .banner-container {
+        flex-direction: column;
+    }
+
+    .banner-text {
+        width: 100%;
+    }
+
+    .banner-text h1 {
+        font-size: 2.25rem;
+        width: 80%;
+    }
+
+    .banner-text p {
+        font-size: 1rem;
+        width: 77%;
+    }
+
+    .banner-buttons {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .banner-buttons button {
+        padding: .5rem 1.5rem;
+        font-size: .9rem;
+        width: 50%;
+        height: 3rem;
+    }
+
+    #shaoon {
+        display: none;
+    }
+
+    .banner-image {
+        margin-left: 2rem;
+    }
+
+    .circle i {
+        display: block;
+    }
+
+    .hover .extra {
+        backdrop-filter: blur(.5rem);
+    }
+
+    .hover .vt3 {
+        top: 10%;
+    }
+
+    .vt1 {
+        bottom: 35%;
+        left: -10%;
+    }
+
+    .extra #vt2 {
+        font-size: 1.8rem;
+    }
+
+    .extra #vt1 {
+        font-size: 1.15rem;
+    }
+
+    .extra .vt2 {
+        font-size: 0.6rem;
+    }
+}
