@@ -354,6 +354,165 @@ nav {
     border-radius: 1.15rem;
 
 }
+/* bmi page started  */
+
+.bmi {
+    width: 100%;
+    background: rgb(34, 34, 34);
+    margin-bottom: 6.25rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.main-container {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+}
+
+.secondary-container-one {
+    width: 50%;
+    background: transparent;
+}
+
+.secondary-container-one h3,
+.secondary-container-two h3 {
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: 900;
+    line-height: 120%;
+    background: transparent;
+}
+
+.secondary-container-one h3 {
+    margin-bottom: 3.25rem;
+}
+
+.secondary-container-two h3 {
+    margin-bottom: 0.875rem;
+}
+
+.secondary-container-two p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    background: transparent;
+    margin-bottom: 2.125rem;
+    width: 95%;
+}
+
+.secondary-container-two {
+    width: 50%;
+    background: transparent;
+}
+
+table {
+    border-collapse: collapse;
+    background: rgb(34, 34, 34);
+}
+
+td {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.8rem 1.5rem;
+    background: rgb(34, 34, 34);
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+th {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem 1.5rem;
+    text-align: left;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 120%;
+    background: rgb(34, 34, 34);
+}
+
+input {
+    color: rgba(255, 255, 255, 0.6);
+    width: 45.5%;
+    height: 3rem;
+    border: none;
+    border-radius: .5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 1rem;
+    margin: 0.3rem 0.3rem 0.3rem 0;
+    padding-left: 1rem;
+}
+
+#sex,
+#activity {
+    color: rgba(255, 255, 255, 0.6);
+    width: 48%;
+    height: 3rem;
+    border: none;
+    border-radius: .5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 1rem;
+    margin: 0.3rem 0.3rem 0.3rem 0;
+    padding-left: 0.635rem;
+    border-right: 0.635rem solid transparent;
+}
+
+#activity {
+    width: 97%;
+    margin-bottom: 2rem;
+}
+
+option {
+    width: 100%;
+    border: none;
+    border-radius: .5rem;
+    background-color: gray;
+    color: lightgray;
+    font-size: 1rem;
+    margin: 0.3rem;
+}
+
+form,
+.input-field,
+label {
+    background: transparent;
+}
+
+.bmi-btn {
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.375rem;
+    border-radius: 2.625rem;
+    background: rgb(230, 83, 60);
+    border: none;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    cursor: pointer;
+}
+.bmi-desc {
+    width: 46.5%;
+    margin: 0 auto;
+    margin-bottom: 6.25rem;
+}
+
+.bmi-desc h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 120%;
+    margin-bottom: 0.875rem;
+}
+
+.bmi-desc p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
 @media screen and (max-width:576px) {
     .nav-links {
         display: none;
@@ -442,7 +601,7 @@ nav {
     .text-container h1 {
         font-size: 2rem;
     }
-    nav,.banner-container,.change-habits,.run-an-extra{
+    nav,.banner-container,.change-habits,.run-an-extra,.bmi-desc {
           width: 82%;
     }
     .run-an-extra {
@@ -472,4 +631,46 @@ nav {
         width: 85%;
         margin: 1.5rem 1rem;
     }
+
+    .bmi-desc h1 {
+        font-size: 2rem;
+    }
+    .main-container {
+        flex-direction: column;
+    }
+
+    .secondary-container-one,
+    .secondary-container-two {
+        width: 100%;
+    }
+
+    .secondary-container-one h3,
+    .secondary-container-two h3 {
+        font-size: 1rem;
+    }
+
+    .secondary-container-one h3 {
+        margin-bottom: 1.45rem;
+    }
+
+    .secondary-container-one {
+        margin-bottom: 2.625rem;
+    }
+
+    input {
+        width: 42%;
+    }
+
+    #sex {
+        width: 47%;
+    }
+
+    #activity {
+        width: 97%;
+    }
+
+    th {
+        font-size: .9rem;
+    }
+
 }
